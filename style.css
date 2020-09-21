@@ -506,3 +506,70 @@ header{
     height: 2rem;
     margin-top: 1rem;
 }
+
+.sessao-orcamento{
+    width: 100%;
+    height: 100vh;
+    background: url("./imagens/bg-orcamento.jpg");
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.orcamento-wrapper{
+    width: 60%;
+    height: 80%;
+    background-color: #ffffff99;
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, .5) ;
+    position: relative;
+}
+
+.sessao-orcamento h1{ /*Titulo*/
+    position: absolute;
+    top:-2.5rem ;
+    left: 2rem;
+    background: #6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+    background: linear-gradient(to right, #a044ff, #6a3093);
+    padding: 0 3rem;
+    color: #fff;
+    font-family:var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, .5) ;
+    border-radius: 10px;
+}
+
+.sessao-orcamento form{ /*Formulario*/
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr; /*1ª Coluna Tamanho Automatico - 2ª Ocupar restante do espaço*/
+    column-gap: 2rem; /*Espaçamento entre colunas*/
+    row-gap: 2rem; /*Espaço entre linhas*/
+}
+.sessao-orcamento label{ /*Rotulos*/
+    font-family: var(--font-secundary);
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.sessao-orcamento input[type="number"]{
+   font-family: var(--font-secundary);
+   width: 4rem;
+   font-size: 2rem;
+   outline: none; 
+   border-radius: 10px;
+   border: none;
+   padding: 0.3rem;
+}
+
+.btn-orcamento {
+    text-transform: uppercase;
+    padding: 1rem;
+    cursor: pointer;
+    grid-column: 2;
+}
+
