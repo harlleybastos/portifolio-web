@@ -46,14 +46,15 @@ html{
 }
 
 .show-menu #line1 {
-  transform: rotate(45deg) translate(0.3rem, 0.45rem);
+    transform: translate(.4rem, .4rem) rotate(45deg);
 }
+
 .show-menu #line2 {
   opacity: 0;
   visibility: hidden;
 }
 .show-menu #line3 {
-  transform: rotate(-45deg) translate(0.3rem, -0.45rem);
+    transform: translate(.2rem, -.5rem) rotate(-45deg);
 }
 
 .hamburguer span {
